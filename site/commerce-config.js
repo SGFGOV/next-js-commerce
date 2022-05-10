@@ -20,6 +20,7 @@ const PROVIDERS = [
   '@vercel/commerce-spree',
   '@vercel/commerce-commercejs',
   '@vercel/commerce-sfcc',
+  'medusa'
 ]
 
 function getProviderName() {
@@ -31,7 +32,8 @@ function getProviderName() {
       ? '@vercel/commerce-shopify'
       : process.env.NEXT_PUBLIC_SWELL_STORE_ID
       ? '@vercel/commerce-swell'
-      : '@vercel/commerce-local')
+      : process.env.NEXT_PUBLIC_MEDUSA_BACKEND?'medusa'
+      :'@vercel/commerce-local')
   )
 }
 

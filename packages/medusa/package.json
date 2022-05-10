@@ -1,5 +1,5 @@
 {
-  "name": "@vercel/commerce",
+  "name": "medusa-commerce",
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
@@ -51,6 +51,7 @@
     "deepmerge": "^4.2.2",
     "import-cwd": "^3.0.0",
     "js-cookie": "^3.0.1",
+    "medusa-react": "^0.3.0",
     "swr": "^1.2.0"
   },
   "peerDependencies": {
@@ -71,7 +72,6 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "taskr": "^1.1.0",
-    "taskr-swc": "^0.0.1",
     "typescript": "^4.5.4"
   },
   "lint-staged": {
